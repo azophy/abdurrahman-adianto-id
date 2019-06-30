@@ -12,12 +12,22 @@ Mastered Programming Language	   : - PHP, JavaScript, CSS, HTML, Python
 	       (proficiency 90%)
 SQL (proficiency 50%)
 Bash, C, C++, C#, Pascal (proficiency 30%)
+
 Mastered Softwares	   : Operating System (Windows & Linux), Office (Word,
 Excel, Powerpoint), Axure, Git, Apache, MySQL, 		    PostgreSQL, Composer, Geoserver (GIS Software)
+
 Mastered Programming Framework : Yii (PHP, Web), Laravel (PHP, Web), JQuery, Unity 
 (C#, Game Development),  Phaser.JS (JavaScript, Game Development), Leaflet.js (Javascript, Map framework), PySide (Python Desktop GUI)
 
 # Portofolio
+## Notable Project
+### CodeJump (2013; https://github.com/azophy/codejump; Programmer; Active)
+Sebuah code-editor berbasis web dengan lisensi open-source, yang dibuat dengan tujuan untuk meningkatkan efektifitas dan produktifitas web-developer, dengan cara menyediakan sebuah code-editor yang ditujukan untuk mengedit sebuah kode langsung dari server.
+### SatuPeta Pariwisata Riau (2018; http://pariwisata.riau.go.id/peta , http://edips.riau.go.id/onemap )
+Sebuah program kerjasama antara Dinas Pariwisata dan Ekonomoi Kreatif Provinsi Riau dengan NGO World Resource Institute Indonesia dan Software House TitikKoma Digital. Program ini merupakan proyek crowdsourcing data pariwisata yang bersifat publik dimana masyarakat dapat mengusulkan lokasi wisata yang sebelumnya belum terpublikasikan ke database peta pariwisata Provinsi Riau. Proyek ini melibatkan banyak sekali teknologi open source seperti software GIS Geoserver dan library per-peta-an Leaflet.js, serta Framework Laravel dan database PostgresSQL untuk antarmuka web nya. Situs ini bisa diakses di alamat .
+### PertafloSIM ( 2016-sekarang; http://www.pertaflosim.com )
+Sebuah software simulasi perpipaan minyak yang merupakan hasil kerjasama antara Research Technology Center Pertamina dengan Research Consortium Oppinet ITB. Sofware ini merupakan software desktop untuk melakukan simulasi-simulasi terkait sifat-sifat fluida dan sejenisnya. Software ini dikembangkan dengan Python 2.7 berdasarkan framework PySide 1.2.4 . Saya di sini di tim RC-OPPINET ITB sebagai salah satu Programmer utama dan juga mengatur sisi DevOps untuk software ini.
+
 ## Project open source / non-profit
 Kelontonk (2011; https://github.com/azophy/kelontong ; Beta Version; Programmer; Discontinued)
 Aplikasi Retail skala kecil menengah berbasis web yang menyasar pasar UMKM. Fokus pada penyediaan solusi yang minus fitur-fitur sekunder demi kemudahan pemakaian di kalangan awam. Merupakan proyek Open Source
@@ -57,14 +67,18 @@ PertafloSIM ( 2016-sekarang; http://www.pertaflosim.com )
 Sebuah software simulasi perpipaan minyak yang merupakan hasil kerjasama antara Research Technology Center Pertamina dengan Research Consortium Oppinet ITB. Sofware ini merupakan software desktop untuk melakukan simulasi-simulasi terkait sifat-sifat fluida dan sejenisnya. Software ini dikembangkan dengan Python 2.7 berdasarkan framework PySide 1.2.4 . Saya di sini di tim RC-OPPINET ITB sebagai salah satu Programmer utama dan juga mengatur sisi DevOps untuk software ini.
 
 ## Services
+
+- User Rrquirement Analysis
+I provide basic user requirement analysis service for any web based software projects. This service including translating user's busines requirement into a detailed technical project plan inluding infrastrunture and feature requirement analysis, basic budget and resource forecast, and general project time plan.
+
 - Full-stack web development
 Using PHP with Yii or Laravel Framework, under windows or linux, using MySql, PostgreSQL, or SQLite. Frontend and Backend, design using Bootstrap & AdminLTE.
 
 - Web Based GIS Software
 Extension of full-stack web development. Utilize leaflet.js & MySQL Geom or Postgres PostGIS libraries. Could also use Geoserver if necessary.
 
-- Basic DevOps
-Setup basic devops for web or desktop projects. Utilize Bash or Batch file scripting, Git hooks, and Python scripting.
+- Basic DevOps and system administration
+Setup basic devops for web or desktop projects. Utilize Bash or Batch file scripting, Git hooks, and Python scripting. I also provide basic server setup, installation, and maintanance.
 
 - Desktop Application
 Multiplatform software using Python , PySide library, and PyInstaller packager.
