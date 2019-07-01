@@ -68,7 +68,7 @@ Sebuah software simulasi perpipaan minyak yang merupakan hasil kerjasama antara 
 
 ## Services
 
-- User Rrquirement Analysis
+- User Requirement Analysis
 I provide basic user requirement analysis service for any web based software projects. This service including translating user's busines requirement into a detailed technical project plan inluding infrastrunture and feature requirement analysis, basic budget and resource forecast, and general project time plan.
 
 - Full-stack web development
