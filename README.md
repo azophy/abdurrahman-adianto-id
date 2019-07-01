@@ -1,17 +1,18 @@
-SITUS PROFIL ABDURRAHMAN SHOFY
-==============================
+PROFILE OF ABDURRAHMAN SHOFY
+============================ 
 
-# kontak:
+# Contact
 - no handphone / WA / Line : 0821 4242 5544
 - email : abdurrahman@adianto.id
 - website : abdurrahman.adianto.id
 
 # Skill
 Main technical Skill : Programming
+
 Mastered Programming Language : 
-- PHP, JavaScript, CSS, HTML, Python (proficiency 90%)
-SQL (proficiency 50%)
-Bash, C, C++, C#, Pascal (proficiency 30%)
+- PHP, CSS, HTML (proficiency 95%)
+- JavaScript, Python (proficiency 90%)
+- SQL, Bash, C, C++, C#, Pascal (proficiency 60%)
 
 Mastered Softwares : 
 - Operating System (Windows & Linux)
@@ -33,12 +34,12 @@ Mastered Programming Framework :
 
 # Portofolio
 ## Notable Project
-### CodeJump (2013; https://github.com/azophy/codejump; Programmer; Active)
-Sebuah code-editor berbasis web dengan lisensi open-source, yang dibuat dengan tujuan untuk meningkatkan efektifitas dan produktifitas web-developer, dengan cara menyediakan sebuah code-editor yang ditujukan untuk mengedit sebuah kode langsung dari server.
-### SatuPeta Pariwisata Riau (2018; http://pariwisata.riau.go.id/peta , http://edips.riau.go.id/onemap )
-Sebuah program kerjasama antara Dinas Pariwisata dan Ekonomoi Kreatif Provinsi Riau dengan NGO World Resource Institute Indonesia dan Software House TitikKoma Digital. Program ini merupakan proyek crowdsourcing data pariwisata yang bersifat publik dimana masyarakat dapat mengusulkan lokasi wisata yang sebelumnya belum terpublikasikan ke database peta pariwisata Provinsi Riau. Proyek ini melibatkan banyak sekali teknologi open source seperti software GIS Geoserver dan library per-peta-an Leaflet.js, serta Framework Laravel dan database PostgresSQL untuk antarmuka web nya. Situs ini bisa diakses di alamat .
-### PertafloSIM ( 2016-sekarang; http://www.pertaflosim.com )
-Sebuah software simulasi perpipaan minyak yang merupakan hasil kerjasama antara Research Technology Center Pertamina dengan Research Consortium Oppinet ITB. Sofware ini merupakan software desktop untuk melakukan simulasi-simulasi terkait sifat-sifat fluida dan sejenisnya. Software ini dikembangkan dengan Python 2.7 berdasarkan framework PySide 1.2.4 . Saya di sini di tim RC-OPPINET ITB sebagai salah satu Programmer utama dan juga mengatur sisi DevOps untuk software ini.
+* CodeJump (2013; https://github.com/azophy/codejump; Programmer; Active)
+    Sebuah code-editor berbasis web dengan lisensi open-source, yang dibuat dengan tujuan untuk meningkatkan efektifitas dan produktifitas web-developer, dengan cara menyediakan sebuah code-editor yang ditujukan untuk mengedit sebuah kode langsung dari server.
+* SatuPeta Pariwisata Riau (2018; http://pariwisata.riau.go.id/peta , http://edips.riau.go.id/onemap )
+    Sebuah program kerjasama antara Dinas Pariwisata dan Ekonomoi Kreatif Provinsi Riau dengan NGO World Resource Institute Indonesia dan Software House TitikKoma Digital. Program ini merupakan proyek crowdsourcing data pariwisata yang bersifat publik dimana masyarakat dapat mengusulkan lokasi wisata yang sebelumnya belum terpublikasikan ke database peta pariwisata Provinsi Riau. Proyek ini melibatkan banyak sekali teknologi open source seperti software GIS Geoserver dan library per-peta-an Leaflet.js, serta Framework Laravel dan database PostgresSQL untuk antarmuka web nya. Situs ini bisa diakses di alamat .
+* PertafloSIM ( 2016-sekarang; http://www.pertaflosim.com )
+    Sebuah software simulasi perpipaan minyak yang merupakan hasil kerjasama antara Research Technology Center Pertamina dengan Research Consortium Oppinet ITB. Sofware ini merupakan software desktop untuk melakukan simulasi-simulasi terkait sifat-sifat fluida dan sejenisnya. Software ini dikembangkan dengan Python 2.7 berdasarkan framework PySide 1.2.4 . Saya di sini di tim RC-OPPINET ITB sebagai salah satu Programmer utama dan juga mengatur sisi DevOps untuk software ini.
 
 ## Project open source / non-profit
 * Kelontonk (2011; https://github.com/azophy/kelontong ; Beta Version; Programmer; Discontinued)
@@ -78,7 +79,7 @@ Sebuah software simulasi perpipaan minyak yang merupakan hasil kerjasama antara 
 * PertafloSIM ( 2016-sekarang; http://www.pertaflosim.com )
     Sebuah software simulasi perpipaan minyak yang merupakan hasil kerjasama antara Research Technology Center Pertamina dengan Research Consortium Oppinet ITB. Sofware ini merupakan software desktop untuk melakukan simulasi-simulasi terkait sifat-sifat fluida dan sejenisnya. Software ini dikembangkan dengan Python 2.7 berdasarkan framework PySide 1.2.4 . Saya di sini di tim RC-OPPINET ITB sebagai salah satu Programmer utama dan juga mengatur sisi DevOps untuk software ini.
 
-## Services
+# Services
 
 - User Requirement Analysis
 I provide basic user requirement analysis service for any web based software projects. This service including translating user's busines requirement into a detailed technical project plan inluding infrastrunture and feature requirement analysis, basic budget and resource forecast, and general project time plan.
