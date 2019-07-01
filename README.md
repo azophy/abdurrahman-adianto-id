@@ -1,10 +1,11 @@
-PROFILE OF ABDURRAHMAN SHOFY
-============================ 
+PROFILE OF ABDURRAHMAN SHOFY ADIANTO
+====================================
 
 # Contact
 - no handphone / WA / Line : 0821 4242 5544
 - email : abdurrahman@adianto.id
 - website : abdurrahman.adianto.id
+- based in : Bandung, Indonesia
 
 # Skill
 Main technical Skill : Programming
