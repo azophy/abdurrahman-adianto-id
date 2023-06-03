@@ -491,14 +491,14 @@ var my_skills = [
       </div>
       <div class="mt-4 text-center">
         <a
-          class="pt-8 text-lg font-semibold uppercase text-primary hover:text-yellow underline lg:text-xl"
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow underline hover:no-underline lg:text-xl"
           :href="project.main_url"
           target="_blank"
           x-text="project.title"
           x-show="project.main_url"
-        ><a/>
+        ><a>
         <span
-          class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl"
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
           x-text="project.title"
           x-show="!project.main_url"
         ></span>
@@ -983,7 +983,7 @@ var work_experiences = [
                     class="mx-auto"
                   />
                 </div>
-                <div x-show="!project.photo_url" class="h-40 w-60 text-center font-bold text-xl bg-grey-50 grid place-items-center ">
+                <div x-show="!project.photo_url" class="h-20 w-60 text-center font-bold text-xl bg-grey-50 grid place-items-center ">
                   <span
                       x-text="project.title"
                   ></span>
@@ -991,12 +991,12 @@ var work_experiences = [
               </div>
               <div class="mt-4 text-center">
                 <a
-                  class="pt-8 text-lg font-semibold uppercase text-primary hover:text-yellow underline lg:text-xl"
+                  class="pt-8 text-lg font-semibold uppercase text-primary hover:text-yellow underline hover:no-underline lg:text-xl"
                   :href="project.main_url"
                   target="_blank"
                   x-text="project.title"
                   x-show="project.main_url"
-                ><a/>
+                ></a>
                 <span
                   class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl"
                   x-text="project.title"
