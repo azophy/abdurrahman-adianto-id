@@ -71,7 +71,6 @@
     media="screen"
     rel="stylesheet"
   />
-  <script src="https://cdn.tailwindcss.com"></script>
   
   <script
     defer
@@ -80,6 +79,9 @@
 
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+  <style>
+  x-cloak { display: none; }
+  </style>
   
 </head>
 
@@ -459,155 +461,60 @@ var my_skills = [
   </h3>
 
   <div
-    class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
+    class="overflow-y-scroll h-200 bg-grey-50 mt-6 p-4 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3 place-self-center"
+    x-data="{ projects: []}"
+    @projects-loaded.window="projects = window.project_list"
   >
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
+    <div x-show="!projects.length" class="w-full text-center text-lg font-bold text-black sm:col-span-2 lg:col-span-3">
+      loading data...
+    </div>
+    <template
+      x-for="project in projects"
+    >
+    <div
+      class="group rounded bg-white px-8 py-12 shadow hover:bg-primary"
+      @click="$dispatch('show-modal', project)"
+    >
+      <div class="mx-auto ">
+        <div x-show="project.photo_url">
           <img
-            src="/assets/img/icon-development-white.svg"
-            alt="development icon"
+            :src="project.photo_url"
+            :alt="'Screenshot of ' + project.title"
+            class="h-40 mx-auto"
           />
         </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-development-black.svg"
-            alt="development icon"
-          />
+        <div x-show="!project.photo_url" class="h-40 text-center font-bold text-xl bg-grey-50 grid place-items-center ">
+          <span
+              x-text="project.title"
+          ></span>
         </div>
       </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+      <div class="mt-4 text-center">
+        <a
+          class="pt-8 text-lg font-semibold uppercase text-primary hover:text-yellow underline lg:text-xl"
+          :href="project.main_url"
+          target="_blank"
+          x-text="project.title"
+          x-show="project.main_url"
+        ><a/>
+        <span
+          class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl"
+          x-text="project.title"
+          x-show="!project.main_url"
+        ></span>
+        <p
+            class="text-grey pt-4 text-sm group-hover:text-white"
+            r-text="`{project.type} ; {project.umaintained} ; {project.year_start}-{project.year_end}`"
+            x-text="project.type + ' ; ' + project.status + ' ; (' + project.year_start + (project.year_end?('-' + project.year_end):'') + ')'"
+        ></p>
+        <p
+            class="text-grey pt-4 text-sm group-hover:text-white md:text-base"
+            x-text="project.description.substring(0,200) + '...'"
         >
-          WEB DEVELOPMENT
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
       </div>
     </div>
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="">
-          <img src="https://i.ibb.co/qFgnrFR/screenshot-puaspoll.png" alt="screenshot-puaspoll" border="0">
-        </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          Technical Writing
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-    </div>
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
-          <img
-            src="/assets/img/icon-mobile-white.svg"
-            alt="Mobile Application icon"
-          />
-        </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-mobile-black.svg"
-            alt="Mobile Application icon"
-          />
-        </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          Mobile Development
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-    </div>
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
-          <img
-            src="/assets/img/icon-email-white.svg"
-            alt="Email Marketing icon"
-          />
-        </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-email-black.svg"
-            alt="Email Marketing icon"
-          />
-        </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          Email Development
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-    </div>
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
-          <img
-            src="/assets/img/icon-design-white.svg"
-            alt="Theme Design icon"
-          />
-        </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-design-black.svg"
-            alt="Theme Design icon"
-          />
-        </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          Graphic Design
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-    </div>
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
-          <img
-            src="/assets/img/icon-graphics-white.svg"
-            alt="Graphic Design icon"
-          />
-        </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-graphics-black.svg"
-            alt="Graphic Design icon"
-          />
-        </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          Web Design
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-    </div>
+    </template>
   </div>
 </div>
 
@@ -715,7 +622,7 @@ var work_experiences = [
   },
   {
     range: 'January 2020 - May 2022',
-    logo: '/assets/img/logo-spotify.svg',
+    logo: null,
     company: 'Jadwal.Guru',
     company_url: 'https://jadwalguru.com/',
     title: 'Fullstack Engineer',
@@ -771,7 +678,13 @@ var work_experiences = [
                 :src="experience.logo"
                 class="h-auto w-32"
                 :alt="experience.company"
+                x-show="experience.logo"
               />
+              <div
+                class="w-full text-center text-xl font-bold bg-grey-50 p-4"
+                x-text="experience.company"
+                x-show="!experience.logo"
+              ></div>
             </a>
           </span>
           <div class="relative ml-3 hidden w-full md:block">
@@ -1014,6 +927,93 @@ var work_experiences = [
     </div>
 
     <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+    <script>
+      var project_list_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1qXkeuv8a8aQ6vx8ZwGg_i4pM_XWUOpKwHlKm2tPk-m7EcqogPJ_WhRB0FdDUYBylfvJUULBqwLVf/pub?gid=0&single=true&output=csv'
+      var project_list = []
+      Papa.parse(project_list_url, {
+          download: true,
+          header: true,
+          complete: (results) => {
+            console.log(results);
+            project_list = results.data
+            window.dispatchEvent(new Event('projects-loaded'))
+          },
+      });
+    </script>
+<div
+  x-data="{ project: null }"
+  x-cloak
+  @keydown.escape="project=null"
+  @show-modal.window="project = $event.detail; console.log(project)"
+>
+    <!-- Modal -->
+    <div
+        class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50"
+        x-show="project"
+    >
+        <!-- Modal inner -->
+        <div
+            class="max-w-4xl px-6 py-4 mx-auto text-left bg-white rounded shadow-lg"
+            @click.away="project = null"
+            x-transition:enter="motion-safe:ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+        >
+            <!-- Title / Close-->
+            <div class="relative flex items-center justify-between">
+                <button type="button" class="absolute top-0 right-0 z-50 cursor-pointer" @click="project = null">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- content -->
+    <div
+      class="group rounded bg-white px-8 py-12 shadow"
+    >
+      <div class="mx-auto ">
+        <div x-show="project.photo_url">
+          <img
+            :src="project.photo_url"
+            :alt="'Screenshot of ' + project.title"
+            class="mx-auto"
+          />
+        </div>
+        <div x-show="!project.photo_url" class="h-40 w-60 text-center font-bold text-xl bg-grey-50 grid place-items-center ">
+          <span
+              x-text="project.title"
+          ></span>
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <a
+          class="pt-8 text-lg font-semibold uppercase text-primary hover:text-yellow underline lg:text-xl"
+          :href="project.main_url"
+          target="_blank"
+          x-text="project.title"
+          x-show="project.main_url"
+        ><a/>
+        <span
+          class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl"
+          x-text="project.title"
+          x-show="!project.main_url"
+        ></span>
+        <p
+            class="text-grey pt-4 text-sm"
+            x-text="project.type + ' ; ' + project.status + ' ; (' + project.year_start + (project.year_end?('-' + project.year_end):'') + ')'"
+        ></p>
+        <p
+            class="text-grey pt-4 text-sm md:text-base"
+            x-text="project.description"
+        >
+        </p>
+      </div>
+    </div>
+        </div>
+    </div>
+</div>
 
   </body>
 </html>
