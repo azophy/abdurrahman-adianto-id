@@ -941,6 +941,8 @@ var work_experiences = [
           },
       });
     </script>
+
+<!-- popup modal for portfolio. adapted from: https://dev.to/jackabox/creating-a-modal-with-tailwind-alpinejs-2g62 -->
 <div
   x-data="{ project: null }"
   x-cloak
@@ -970,50 +972,51 @@ var work_experiences = [
             </div>
 
             <!-- content -->
-    <div
-      class="group rounded bg-white px-8 py-12 shadow"
-    >
-      <div class="mx-auto ">
-        <div x-show="project.photo_url">
-          <img
-            :src="project.photo_url"
-            :alt="'Screenshot of ' + project.title"
-            class="mx-auto"
-          />
-        </div>
-        <div x-show="!project.photo_url" class="h-40 w-60 text-center font-bold text-xl bg-grey-50 grid place-items-center ">
-          <span
-              x-text="project.title"
-          ></span>
-        </div>
-      </div>
-      <div class="mt-4 text-center">
-        <a
-          class="pt-8 text-lg font-semibold uppercase text-primary hover:text-yellow underline lg:text-xl"
-          :href="project.main_url"
-          target="_blank"
-          x-text="project.title"
-          x-show="project.main_url"
-        ><a/>
-        <span
-          class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl"
-          x-text="project.title"
-          x-show="!project.main_url"
-        ></span>
-        <p
-            class="text-grey pt-4 text-sm"
-            x-text="project.type + ' ; ' + project.status + ' ; (' + project.year_start + (project.year_end?('-' + project.year_end):'') + ')'"
-        ></p>
-        <p
-            class="text-grey pt-4 text-sm md:text-base"
-            x-text="project.description"
-        >
-        </p>
-      </div>
-    </div>
+            <div
+              class="group rounded bg-white px-8 py-12 shadow"
+            >
+              <div class="mx-auto ">
+                <div x-show="project.photo_url">
+                  <img
+                    :src="project.photo_url"
+                    :alt="'Screenshot of ' + project.title"
+                    class="mx-auto"
+                  />
+                </div>
+                <div x-show="!project.photo_url" class="h-40 w-60 text-center font-bold text-xl bg-grey-50 grid place-items-center ">
+                  <span
+                      x-text="project.title"
+                  ></span>
+                </div>
+              </div>
+              <div class="mt-4 text-center">
+                <a
+                  class="pt-8 text-lg font-semibold uppercase text-primary hover:text-yellow underline lg:text-xl"
+                  :href="project.main_url"
+                  target="_blank"
+                  x-text="project.title"
+                  x-show="project.main_url"
+                ><a/>
+                <span
+                  class="pt-8 text-lg font-semibold uppercase text-primary lg:text-xl"
+                  x-text="project.title"
+                  x-show="!project.main_url"
+                ></span>
+                <p
+                    class="text-grey pt-4 text-sm"
+                    x-text="project.type + ' ; ' + project.status + ' ; (' + project.year_start + (project.year_end?('-' + project.year_end):'') + ')'"
+                ></p>
+                <p
+                    class="text-grey pt-4 text-sm md:text-base"
+                    x-text="project.description"
+                >
+                </p>
+              </div>
+            </div>
         </div>
     </div>
 </div>
+<!-- end popup modal for portfolio -->
 
   </body>
 </html>
