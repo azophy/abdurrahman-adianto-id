@@ -1,19 +1,6 @@
-# Atom Template
+# Abdurrahman's Personal website
 
-Thank you for using this template! We hope you can use it to make your next web project a success!
-
-Atom is a free portfolio template styled with TailwindCSS. Other open source libraries were also used to provide the functionality required to make your customization quicker and faster.
-
-- [Alpine.js](https://github.com/alpinejs/alpine): A Vue-inspired jQuery alternative that offers you the reactive and declarative nature of big frameworks at a much lower cost.
-- [Alpine Magic Helpers](https://github.com/alpine-collective/alpine-magic-helpers): A collection of magic properties and helper functions for use with Alpine.js
-- [Boxicons](https://boxicons.com/): A simple vector icons set carefully crafted for designers and developers to use in your next project.
-- [Highlight.js](https://highlightjs.org/): A popular code syntax highlight library, we're also using the "Atom Dark" theme for it.
-
-We’re also using some Tailwind plugins to extend our config and available classes:
-
-- [TailwindCSS Forms](https://github.com/tailwindlabs/tailwindcss-forms): This is the official plugin for globally styling form fields, we have added some custom styles too.
-- [TailwindCSS Typography](https://tailwindcss.com/docs/typography-plugin): Official TailwindCSS plugin for styling user-generated content.
-- [TailwindCSS Aspect Ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio): Another official plugin for aspect ratio utilities, we use this heavily for responsive images.
+Based on [Atom Template](https://redpixelthemes.com/templates/atom/) by [Red Pixel Themes](https://redpixelthemes.com). Utilize TailwindCSS & AlpineJS
 
 ## Development Workflow
 
